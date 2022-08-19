@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="sonuc.css">
+    <script src="sonuc.js"></script>
+    
+    <title>Sonuçlarım</title>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="MainHeader">
+                    <a href="/Users/mehmetkahya/Desktop/denemeAnalizHtml/index.html">
+                        <button class="main">Sonuçlarım</button>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="Results">
+        <p id="tarih">Tarih: </p>
+        <p id="tr">Türkçe net:</p>
+        <p id="sos">Sosyal net:</p>
+        <p id="mat">Matematik net:</p>
+
+        <script>
+            // get datas from local storage
+
+            console.log("sonuc.js ACTIVATED")
+
+            var tarih = localStorage.getItem("tarih");
+            var turkce = localStorage.getItem("turkce");
+            var sosyal = localStorage.getItem("sosyal");
+            var matematik = localStorage.getItem("matematik");
+            var fen = localStorage.getItem("fen");
+            var toplam = localStorage.getItem("toplam net");
+
+            document.getElementById("tarih").innerHTML = "Tarih: " + tarih;
+            document.getElementById("tr").innerHTML = "Türkçe Net: "+turkce;
+            document.getElementById("sos").innerHTML = "Sosyal Net: "+sosyal;
+            document.getElementById("mat").innerHTML = "Matematik Net: "+matematik;
+        </script>
+
+    </div>
+</body>
+</html>

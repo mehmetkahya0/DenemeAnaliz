@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--- Mehmet Kahya - 18.06.2022 - Deneme Analiz - Side Project-->
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="script" href="script.js">
+    <link href="//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="script.js"></script>
+    
+    <title>Deneme Analiz</title>
+</head>
+<body>
+    <div class="navbar-container">
+
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="MainHeader">Deneme Analiz</div>
+                <a href="index.html"><img src="images/logo.jpg" alt="logo" style="width: 10%;"></a>
+                
+            </div>
+            <div class="navbar-right">
+
+                <div class="sonucDiv">
+                    <a href="sonuçlar/sonuc.html">
+                        <button class="sonuc">Sonuçlarım</button>
+                    </a>
+                </div>
+
+                <!-----
+                <div class="girisDiv">
+                    <button class="giris">Giriş Yap</button>
+                </div>
+
+                <div class="kayitDiv">
+                    <button class="kayit" onclick="location.href='https://porfoliologin.mehmet0.repl.co'">Kayıt Ol!</button>
+                </div>
+
+                --->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="week" id="tarih">
+            Tarih: <input type="week" id="week" placeholder="Hafta Seçiniz">
+            <br>
+            <br>
+        </div>
+    
+        <div class="net">
+
+            <div class="tr">
+                Türkçe Net:<input type="text" id="net1" placeholder="Türkçe Net:"><br>
+            </div>
+            <div class="sos">
+                Sosyal Net:<input type="text" id="net2" placeholder="Sosyal Net:"><br>
+            </div>
+            <div class="mat">
+                Matematik Net:<input type="text" id="net3" placeholder="Matematik Net:"><br>
+            </div>
+            <div class="Fen">
+                Fen Net:<input type="text" id="net4" placeholder="Fen Net:">
+            </div>
+
+            <div class="submit">
+                <button id="submit-button" onclick="alertFunc(), saveForm()">Onayla!</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="footer">
+        <div class="OhWhoAmI">
+            Mehmet Kahya - 2022 
+        </div>
+        
+        <div class="TODO">
+            Üyelik Sistemi Yakında Gelecektir.<br>
+            Not: Safari Kullanıyorsanız Şu Anlık Tarih Seçilemiyor. Yakında Düzeltilecektir.
+        </div>
+
+        <div class="contact">
+            <a href="https://www.twitter.com" target="_blank"><i class='fab fa-twitter'></i></a>
+            <a href="https://github.com/mehmetkahya0" target="_blank"><i class='fab fa-github'></i></a>
+            <a href="https://www.instagram.com/mehmettkahya_" target="_blank"><i class='fab fa-instagram'></i>
+        </div>
+    </div>
+</body>
+</html>
